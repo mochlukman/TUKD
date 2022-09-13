@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row mt-2 p-2">
+    <div class="card col-md-12">
+      <div class="card-title">
+        <h4>{{ title }}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="card col-md-12">
+      <div class="card-body">
+        <p-tabView [activeIndex]="tabIndex" (onChange)="onChangeTab($event)">
+          <p-tabPanel header="Pembuatan DPA">
+            <app-sk-dpa-pembuatan [tabIndex]="tabIndex"></app-sk-dpa-pembuatan>
+          </p-tabPanel>
+          <p-tabPanel header="Pengesahan DPA">
+            <app-sk-dpa-pengesahan [tabIndex]="tabIndex"></app-sk-dpa-pengesahan>
+          </p-tabPanel>
+          <p-tabPanel header="Validasi DPA">
+            <app-sk-dpa-validasi [tabIndex]="tabIndex"></app-sk-dpa-validasi>
+          </p-tabPanel>
+        </p-tabView>
+      </div>
+    </div>
+  </div>
+</div>

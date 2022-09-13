@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="row mt-2 p-2">
+    <div class="card col-md-12">
+      <div class="card-title">
+        <h4>BKU SKPD</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="card col-md-12">
+      <div class="card-body">
+        <p-tabView [activeIndex]="tabIndex" (onChange)="onChangeTab($event)">
+          <p-tabPanel header="BKU SKPD">
+            <app-bku-skpd></app-bku-skpd>
+          </p-tabPanel>
+          <p-tabPanel header="BKU Pergeseran">
+            <app-bku-pergeseran></app-bku-pergeseran>
+          </p-tabPanel>
+          <p-tabPanel header="BKU Pelimpahan">
+            <app-bku-pelimpahan></app-bku-pelimpahan>
+          </p-tabPanel>
+          <p-tabPanel header="BKU SP2D">
+            <app-bku-sp2d></app-bku-sp2d>
+          </p-tabPanel>
+          <p-tabPanel header="BKU Belanja">
+            <app-bku-belanja></app-bku-belanja>
+          </p-tabPanel>
+          <p-tabPanel header="BKU Pajak">
+            <app-bku-pajak></app-bku-pajak>
+          </p-tabPanel>
+          <p-tabPanel header="BKU Panjar">
+            <app-bku-panjar></app-bku-panjar>
+          </p-tabPanel>
+        </p-tabView>
+      </div>
+    </div>
+  </div>
+</div>

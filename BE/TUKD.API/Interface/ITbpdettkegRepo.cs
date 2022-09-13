@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using TUKD.API.Models;
+
+namespace TUKD.API.Interface
+{
+    public interface ITbpdettkegRepo : IRepo<Tbpdettkeg>
+    {
+        Task<List<Tbpdettkeg>> ViewDatas(long Idtbpdett);
+        Task<Tbpdettkeg> ViewData(long Idtbpdettkeg);
+        Task<bool> Update(Tbpdettkeg param);
+    }
+}

@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row mt-2 p-2">
+    <div class="card col-md-12">
+      <div class="card-title">
+        <h4>{{ title }}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="card col-md-12">
+      <div class="card-body">
+        <p-tabView [activeIndex]="tabIndex" (onChange)="onChangeTab($event)">
+          <p-tabPanel header="Pembuatan SPP">
+            <app-pembuatan-spp-ls-uangmuka [tabIndex]="tabIndex"></app-pembuatan-spp-ls-uangmuka>
+          </p-tabPanel>
+          <p-tabPanel header="Pengesahan SPP">
+            <app-verifikasi-spp-ls-uangmuka [tabIndex]="tabIndex"></app-verifikasi-spp-ls-uangmuka>
+          </p-tabPanel>
+          <p-tabPanel header="Penolakan SPP">
+            <app-tolak-spp-ls-uangmuka [tabIndex]="tabIndex"></app-tolak-spp-ls-uangmuka>
+          </p-tabPanel>
+        </p-tabView>
+      </div>
+    </div>
+  </div>
+</div>

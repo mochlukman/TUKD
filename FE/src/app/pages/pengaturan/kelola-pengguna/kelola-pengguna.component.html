@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row mt-2 p-2">
+    <div class="card col-md-12">
+      <div class="card-title">
+        <h4>Pengaturan - Pengelolaan Pengguna</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="card col-md-12">
+      <div class="card-body">
+        <p-tabView [activeIndex]="tabIndex" (onChange)="onChangeTab($event)">
+          <p-tabPanel header="BUD">
+            <app-kelola-bud></app-kelola-bud>
+          </p-tabPanel>
+          <p-tabPanel header="Pengguna Anggaran">
+            <app-kelola-anggaran></app-kelola-anggaran>
+          </p-tabPanel>
+          <p-tabPanel header="Bendahara Pengeluaran">
+            <app-kelola-pengeluaran></app-kelola-pengeluaran>
+          </p-tabPanel>
+        </p-tabView>
+      </div>
+    </div>
+  </div>
+</div>

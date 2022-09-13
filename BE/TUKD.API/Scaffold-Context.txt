@@ -1,0 +1,3 @@
+﻿dotnet ef dbcontext scaffold "Server=DESKTOP-QG1K9BD;User Id=sa;Password=valid!;Database=V@LID49V7_2021;Trusted_Connection=False;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c TukdContext -f
+
+Scaffold-DbContext "Server=DESKTOP-QG1K9BD;User Id=sa;Password=valid!;Database=V@LID49V7_2021;Trusted_Connection=False;" Microsoft.EntityFrameworkCore.SqlServer -Output Models -Context TukdContext -f

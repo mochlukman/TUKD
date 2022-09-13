@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row mt-2 p-2">
+    <div class="card col-md-12">
+      <div class="card-title">
+        <h4>{{ title }}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="card col-md-12">
+      <div class="card-body">
+        <p-tabView [activeIndex]="tabIndex" (onChange)="onChangeTab($event)">
+          <p-tabPanel header="Kinerja Kegiatan">
+            <app-kinkegx></app-kinkegx>
+          </p-tabPanel>
+          <p-tabPanel header="Kinerja Sub Kegiatan">
+            <app-kinkeg-subx></app-kinkeg-subx>
+          </p-tabPanel>
+        </p-tabView>
+      </div>
+    </div>
+  </div>
+</div>

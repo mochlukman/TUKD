@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <div class="row mt-2 p-2">
+    <div class="card col-md-12">
+      <div class="card-title">
+        <h4>Pelimpahan Bank</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row p-2">
+    <div class="card col-md-12">
+      <div class="card-body">
+        <p-tabView [activeIndex]="tabIndex" (onChange)="onChangeTab($event)">
+          <p-tabPanel header="Pelimpahan BP-BPP">
+            <app-pelbank-bp-to-bpp></app-pelbank-bp-to-bpp>
+          </p-tabPanel>
+          <p-tabPanel header="Pelimpahan BPP-BP">
+            <app-pelbank-bpp-to-bp></app-pelbank-bpp-to-bp>
+          </p-tabPanel>
+          <p-tabPanel header="Pelimpahan BP-BP">
+            <app-pelbank-bp-to-bp></app-pelbank-bp-to-bp>
+          </p-tabPanel>
+        </p-tabView>
+      </div>
+    </div>
+  </div>
+</div>
